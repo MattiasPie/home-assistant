@@ -18,6 +18,8 @@ from homeassistant.const import (
     EVENT_HOMEASSISTANT_STOP,
     POWER_WATT,
     TEMP_CELSIUS,
+    UNIT_PERCENTAGE,
+    UNIT_UV_INDEX,
 )
 import homeassistant.helpers.config_validation as cv
 from homeassistant.helpers.entity import Entity
@@ -47,7 +49,7 @@ DATA_TYPES = OrderedDict(
     [
         ("Temperature", TEMP_CELSIUS),
         ("Temperature2", TEMP_CELSIUS),
-        ("Humidity", "%"),
+        ("Humidity", UNIT_PERCENTAGE),
         ("Barometer", ""),
         ("Wind direction", ""),
         ("Rain rate", ""),
@@ -56,7 +58,7 @@ DATA_TYPES = OrderedDict(
         ("Sound", ""),
         ("Sensor Status", ""),
         ("Counter value", ""),
-        ("UV", "uv"),
+        ("UV", UNIT_UV_INDEX),
         ("Humidity status", ""),
         ("Forecast", ""),
         ("Forecast numeric", ""),
